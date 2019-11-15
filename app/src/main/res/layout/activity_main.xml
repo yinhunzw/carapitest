@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_start_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始测试"/>
+
+    <Button
+        android:id="@+id/btn_stop_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_toEndOf="@id/btn_start_test"
+        android:text="停止测试"/>
+
+    <Button
+        android:id="@+id/btn_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_toEndOf="@id/btn_stop_test"
+        android:text="导出Excel"/>
+    <TextView
+        android:id="@+id/test_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_alignBaseline="@id/btn_start_test"
+        android:layout_toEndOf="@id/btn_export"/>
+
+    <EditText
+        android:id="@+id/et_input_filter"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_start_test"
+        android:hint="@string/input_hint" />
+    <Button
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/et_input_filter"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_below="@id/btn_stop_test"
+        android:text="@string/search"/>
+
+    <Button
+        android:id="@+id/btn_showall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_filter"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_below="@id/btn_stop_test"
+        android:text="@string/all"/>
+</RelativeLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

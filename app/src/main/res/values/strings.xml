@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CarAPITest</string>
+    <string name="input_hint">请输入要查询的关键词</string>
+    <string name="search">查询</string>
+    <string name="all">全部</string>
+    <string name="testing">测试中...</string>
+    <string name="test_stop">停止测试</string>
+    <string name="test_done">测试完成</string>
+</resources>
